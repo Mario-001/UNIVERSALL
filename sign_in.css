@@ -1,0 +1,155 @@
+@font-face {
+    font-family: gender ;
+    src: url(font/Aileron-SemiBold.otf);
+}
+@font-face {
+    font-family: login;
+    src: url(font/Aileron-Black.otf);
+}
+@font-face {
+    font-family: acc;
+    src: url(font/Aileron-Regular.otf);
+}
+body
+{
+    margin: auto;
+    width: 1536px;
+    /* background-color: #f8f3ef; */
+}
+#header
+{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 1536px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 25px 0px rgb(247, 247, 247);
+}
+#header #logo
+{
+    width: 250px;
+}
+#search
+{
+    width: 240px;
+    height: 40px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding-left: 15px;
+    border-color:rgb(210, 210, 210);
+    background-color: rgb(250, 250, 250);
+    font-family: gender;
+    text-transform:uppercase;
+    font-size: 12px;
+    float: right;
+    
+}
+form
+{
+    left: 350px;
+}
+#shoping_bag
+{
+
+    width: 65px;
+}
+#person
+{
+
+    width: 45px;
+
+}
+li:nth-child(2)
+{
+    padding-left: 50px;
+}
+#gender
+{
+    font-family: gender;
+    font-size: 24px;
+    display: flex;
+    width: 550px;
+}
+#gender a
+{
+    color: black;
+    text-decoration: none;
+    margin-left: 50px;
+}
+#div_input_person_cart
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 600px;
+}
+#content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 637px;
+    background-color: rgb(240, 240, 240);
+}
+#content form
+{
+    display: flex;
+    flex-direction: column;
+}
+#form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 5px 10px #989898;
+    border-radius: 30px;
+}
+#form p:first-of-type:not(form p)
+{
+    position: relative;
+    left: -150px;
+    font-size: 30px;
+    font-family: login;
+
+}
+form p
+{
+    font-size: 14px;
+    font-family: acc;
+    margin-bottom: 25px;
+}   
+#username,
+#password,
+#email
+{
+    margin-bottom: 5px;
+    width: 400px;
+    height: 50px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding-left: 15px;
+    border-color:rgb(210, 210, 210);
+    font-family: gender;
+    text-transform:uppercase;
+    font-size: 12px;
+}
+button
+{
+    color: white;
+    background-color: black;
+    margin-top: 10px;
+    width: 30%;
+    height: 50px;
+    border-radius: 35px;
+    border: solid;
+    border-color: lightgray;
+    border-width: 1px;
+}
