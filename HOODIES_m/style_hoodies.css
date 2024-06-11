@@ -1,0 +1,275 @@
+@font-face {
+    font-family: gender ;
+    src: url(font/Aileron-SemiBold.otf);
+}
+@font-face {
+    font-family: genderr;
+    src: url(font/Aileron-Bold.otf);
+}
+@font-face {
+    font-family: gen ;
+    src: url(font/Aileron-Thin.otf  );
+}
+body
+{
+    margin: auto;
+    width: 1519px;
+}
+#header
+{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 1519px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 25px 0px rgb(247, 247, 247);
+}
+#header #logo
+{
+    width: 250px;
+}
+#search
+{
+    width: 240px;
+    height: 40px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 50px;
+    padding-left: 15px;
+    border-color:rgb(210, 210, 210);
+    background-color: rgb(250, 250, 250);
+    font-family: gender;
+    text-transform:uppercase;
+    font-size: 12px;
+    float: right;
+    
+}
+form
+{
+    left: 350px;
+}
+#shoping_bag
+{
+
+    width: 65px;
+}
+#person
+{
+
+    width: 45px;
+
+}
+li
+{
+    display: inline-block;
+}
+#gender_male_down p
+{
+    margin-left: 75px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-family: gender;
+}
+#gender_male_down a,
+#gender_female_down a
+{
+    text-decoration: none;
+    color: black;
+}
+#gender_female_down p
+{
+    margin-left: 75px;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-family: gender;
+}
+li:nth-child(1) #gender_male_down
+{   
+    position: absolute;
+    background-image: url(36caa24794967e37679cbaf3ac5c8a80.jpg);
+    box-shadow: 0px 18px 35px -5px rgb(80 67 67);
+    width: 490px;
+    height: 420px;
+    margin-left: -74px;
+    margin-top: 48px;
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out,visibility 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+li:nth-child(2) #gender_female_down
+{
+    position: absolute;
+    background-image: url(6c5c960f6fa3aa8db0ded71528ba83bf.jpg);
+    box-shadow: 0px 18px 35px -5px rgb(80 67 67);
+    width: 490px;
+    height: 420px;
+    margin-left: -172px;
+    margin-top: 48px;
+    border-radius: 15px;
+    transition: opacity 0.5s ease-in-out,visibility 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+li:nth-child(1):hover #gender_male_down,
+li:nth-child(2):hover #gender_female_down
+{
+    opacity: 1;
+    visibility: visible;
+}
+#ul_male
+{
+    font-family: gender;
+    display: flex;
+    flex-direction: column;
+}
+#ul_male li
+{
+    padding-bottom: 25px;
+    padding-left: 32.5px;
+}
+#ul_male li:nth-child(1)
+{
+    margin-top: 20px;
+}
+#ul_male li:nth-child(1)
+{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+#ul_female
+{
+    font-family: gender;
+    display: flex;
+    flex-direction: column;
+}
+#ul_female li
+{
+    padding-bottom: 25px;
+    padding-left: 32.5px;
+}
+#ul_female li:nth-child(1)
+{
+    margin-top: 20px;
+}
+#female
+{
+    padding-left: 50px;
+}
+#gender
+{
+    display: flex;
+    width: 550px;
+}
+#male > p
+{
+    margin: 0px;
+    padding: 0px;
+    font-family:gender;
+    font-size: 16px;
+    cursor: pointer;
+}
+#female > p
+{
+    margin: 0px;
+    padding: 0px;
+    font-family:gender;
+    font-size: 16px;
+    cursor: pointer;
+}
+#arrow_male
+{
+    position: absolute;
+    margin-left: 26px;
+    margin-top: -37px;
+    width: 50px;
+    cursor: pointer;
+}
+li:nth-child(1) #arrow_male,
+li:nth-child(2) #arrow_female
+{
+    transition: transform 0.5s ease;
+}
+li:nth-child(1):hover #arrow_male,
+li:nth-child(2):hover #arrow_female
+{
+    transform: rotate(180deg);
+    transition:  0.5s ease-in-out;
+}
+#arrow_male:hover,
+#arrow_female:hover
+{
+    transform: rotate(180deg);
+    transition: 0.5s ease-in-out;
+}
+#arrow_female
+{
+    position: absolute;
+    margin-left: 45px;
+    margin-top: -37px;
+    width: 50px;
+    cursor: pointer;
+}
+#div_input_person_cart
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 600px;
+}
+#content
+{
+    width: 100%;
+    height: 1000px;
+    background:linear-gradient(white, #fbf8f3) no-repeat;
+}
+#sliki div p
+{
+    font-size: 18px;
+    margin-left: 30px;
+    font-family: genderr;
+}
+#div_name_price p:nth-child(2)
+{
+   font-family: gen;
+   margin-top: -10px;
+}
+#div_name_price_2 p:nth-child(2)
+{
+    font-family: gen;
+    margin-top: -10px;
+}
+#div_name_price_2
+{
+    margin-left: 10px;
+}
+#sliki
+{
+    display: flex;
+    justify-content: center;
+}
+#hoodies_h
+{
+    margin-left: 100px;
+    font-family: genderr;
+    font-size: 30px;
+    text-align: left;
+}
+#hoodie_black
+{
+    width: 450px;
+    border-radius: 35px;
+}
+#hoodie_beige
+{
+    width: 450px;
+    border-radius: 35px;
+    margin-left: 10px;
+}
+#hooide_black_2
+{
+    width: 450px;
+    border-radius: 35px;
+    margin-left: 10px;
+}
